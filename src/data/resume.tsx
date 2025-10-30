@@ -5,7 +5,7 @@ import React from "react";
 const DATA = {
   name: "Ashwin Rajakannan",
   initials: "AR",
-  url: "https://github.com/aswinraja98",
+  url: "https://github.com/ashwin-rajakannan",
   email: "aswinraja98@gmail.com",
   phone: "+91 6374511087",
   location: "Dharmapuri, Tamilnadu, India",
@@ -16,7 +16,7 @@ const DATA = {
     "AI/ML Developer specializing in NLP and data engineering.",
   description:
     "Driven by curiosity and precision, I turn data into intelligent systems. From building NLP models with Transformers to engineering scalable data pipelines with Docker and Flask, each project and certification has shaped my journey toward mastering the AI–ML ecosystem.",
-  avatarUrl: "/aswin-portfolio.github.io/avatar.png",
+  avatarUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}avatar.png`,
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
@@ -29,8 +29,14 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/aswinraja98",
+        url: "https://github.com/ashwin-rajakannan",
         icon: Icons.github,
+        navbar: true,
+      },
+      Kaggle: {
+        name: "Kaggle",
+        url: "https://www.kaggle.com/ashwin0001",
+        icon: Icons.kaggle,
         navbar: true,
       },
       LinkedIn: {
@@ -122,7 +128,7 @@ const DATA = {
       start: "04/2023",
       end: "06/2023",
       href: "",
-      logoUrl: "/aswin-portfolio.github.io/Assisto-logo.png",
+  logoUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}Assisto-logo.png`,
       description: "Worked on NLP models using Transformers (MT5, T5, Byt5). Optimized data pipelines with Jina AI and Haystack. Improved model performance and integrated APIs.",
     },
     {
@@ -131,7 +137,7 @@ const DATA = {
       start: "12/2022",
       end: "01/2023",
       href: "",
-      logoUrl: "/aswin-portfolio.github.io/exotic-learning-Logo.webp",
+  logoUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}exotic-learning-Logo.webp`,
       description: "Developed strategies to expand the company's reach in the education sector. Built and maintained relationships with educational institutions and business stakeholders.",
     },
     {
@@ -140,7 +146,7 @@ const DATA = {
       start: "01/2022",
       end: "07/2022",
       href: "",
-      logoUrl: "/aswin-portfolio.github.io/Saturam-logo.jpg",
+  logoUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}Saturam-logo.jpg`,
       description: "Built RESTful APIs using Flask for data extraction and manipulation. Utilized Python, SQL, and Docker for data engineering tasks. Performed web scraping to collect and analyze data efficiently.",
     },
   ],
@@ -151,7 +157,7 @@ const DATA = {
       technologies: ["Python", "BERT", "T5", "BART", "Transformers", "PyTorch", "NLTK", "scikit-learn", "Text Summarization System"],
       href: "/projects/text-summarization-demo",
       dates: "2025",
-      image: "/aswin-portfolio.github.io/text-Summarization-System-logo.png",
+  image: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}text-Summarization-System-logo.png`,
       video: "",
       links: [
         {
@@ -161,7 +167,7 @@ const DATA = {
         },
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/text-summarization-system",
+          href: "https://github.com/ashwin-rajakannan/text-summarization-system",
           icon: "Github"
         }
       ],
@@ -172,7 +178,7 @@ const DATA = {
       technologies: ["Python", "VADER", "scikit-learn", "NLP", "Next.js", "React"],
       href: "/projects/sentiment-analysis-demo",
       dates: "2025",
-      image: "/aswin-portfolio.github.io/sentiment-analysis-tool-logo.jpeg",
+  image: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}sentiment-analysis-tool-logo.jpeg`,
       video: "",
       links: [
         {
@@ -182,7 +188,7 @@ const DATA = {
         },
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/sentiment-analysis-tool-v2",
+          href: "https://github.com/ashwin-rajakannan/sentiment-analysis-tool-v2",
           icon: "Github"
         }
       ],
@@ -209,12 +215,12 @@ const DATA = {
       technologies: ["Python", "TensorFlow", "FastAPI", "Next.js", "Tailwind CSS", "GTSRB", "Computer Vision", "Deep Learning"],
       href: "https://github.com/aswinraja98/traffic-signs-recognition-system",
       dates: "2025",
-      image: "/aswin-portfolio.github.io/traffic-sign-recognition-system-logo.png",
+  image: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}traffic-sign-recognition-system-logo.png`,
       video: "",
       links: [
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/traffic-signs-recognition-system",
+          href: "https://github.com/ashwin-rajakannan/traffic-signs-recognition-system",
           icon: "Github"
         }
       ],
@@ -227,7 +233,7 @@ const DATA = {
       start: "2020",
       end: "2022",
       href: "https://ceg.annauniv.edu/profile.html",
-      logoUrl: "/aswin-portfolio.github.io/anna-university-logo.png",
+  logoUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}anna-university-logo.png`,
     },
     {
       school: "SRM Institute of Science and Technology",
@@ -235,7 +241,7 @@ const DATA = {
       start: "2015",
       end: "2020",
       href: "https://www.srmist.edu.in/",
-      logoUrl: "/aswin-portfolio.github.io/srm-university-logo.png",
+  logoUrl: `${process.env.NEXT_PUBLIC_ASSET_PREFIX || '/'}srm-university-logo.png`,
     },
   ],
   hackathons: [] as Array<{

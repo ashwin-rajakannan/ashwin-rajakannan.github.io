@@ -4,7 +4,7 @@ import React from "react";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
+import ProjectCard from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Icons } from "@/components/icons";
 import DATA from "@/data/resume";

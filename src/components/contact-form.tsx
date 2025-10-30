@@ -84,10 +84,10 @@ export function ContactForm() {
           <Icons.email className="h-4 w-4" />
         </button>
         <div className="flex gap-3 justify-end">
-          <a href="https://github.com/aswinraja98" target="_blank" rel="noopener" aria-label="GitHub"><Icons.globe className="h-7 w-7 text-[#06B6D4]" /></a>
+          <a href="https://github.com/ashwin-rajakannan" target="_blank" rel="noopener" aria-label="GitHub"><Icons.github className="h-7 w-7 text-[#06B6D4]" /></a>
           <a href="https://linkedin.com/in/aswinraja98" target="_blank" rel="noopener" aria-label="LinkedIn"><Icons.linkedin className="h-7 w-7 text-[#06B6D4]" /></a>
           <a href="https://medium.com/@aswinraja98" target="_blank" rel="noopener" aria-label="Medium"><Icons.medium className="h-7 w-7 text-[#06B6D4]" /></a>
-          <a href="https://kaggle.com/aswinraja98" target="_blank" rel="noopener" aria-label="Kaggle"><Icons.kaggle className="h-7 w-7 text-[#06B6D4]" /></a>
+          <a href="https://www.kaggle.com/ashwin0001" target="_blank" rel="noopener" aria-label="Kaggle"><Icons.kaggle className="h-7 w-7 text-[#06B6D4]" /></a>
           <a href="mailto:aswinraja98@gmail.com" aria-label="Email"><Icons.email className="h-7 w-7 text-[#06B6D4]" /></a>
         </div>
       </div>
