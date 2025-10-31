@@ -10,6 +10,7 @@ const nextConfig = {
       },
     ],
   },
+  output: 'export', // Enable static export for Next.js 14+
 };
 
 export default nextConfig;
