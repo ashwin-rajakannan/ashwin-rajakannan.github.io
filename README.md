@@ -66,7 +66,7 @@ A modern, professional portfolio showcasing my journey in AI/ML development - fr
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/aswinraja98/portfolio.git
+   git clone https://github.com/ashwin-rajakannan/portfolio.git
    cd portfolio
    ```
 
@@ -140,7 +140,7 @@ MIT License - Copyright (c) 2025 Ashwin Rajakannan
 
 ## 🤝 Connect With Me
 
-- **GitHub**: [@aswinraja98](https://github.com/aswinraja98)
+- **GitHub**: [@ashwin-rajakannan](https://github.com/ashwin-rajakannan)
 - **LinkedIn**: [Ashwin Rajakannan](https://www.linkedin.com/in/ashwin-rajakannan-094876189)
 - **Email**: aswinraja98@gmail.com
 

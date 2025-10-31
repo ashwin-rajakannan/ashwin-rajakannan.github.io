@@ -99,11 +99,11 @@ export default function SentimentAnalysisDemo() {
           </CardHeader>
           <CardContent className="text-sm text-muted-foreground">
             <p>
-              This is a <strong>frontend demo</strong> of the Sentiment Analysis Tool. It uses basic keyword matching to determine if text is positive, negative, or neutral. For a full-featured version with advanced NLP, see the <a href="https://github.com/aswinraja98/sentiment-analysis-tool-v2" target="_blank" className="text-[#06B6D4] hover:underline font-medium">GitHub repository</a>.
+              This is a <strong>frontend demo</strong> of the Sentiment Analysis Tool. It uses basic keyword matching to determine if text is positive, negative, or neutral. For a full-featured version with advanced NLP, see the <a href="https://github.com/ashwin-rajakannan/sentiment-analysis-tool-v2" target="_blank" className="text-[#06B6D4] hover:underline font-medium">GitHub repository</a>.
             </p>
           </CardContent>
         </Card>
-
+              <a href="https://github.com/ashwin-rajakannan" target="_blank" className="text-[#06B6D4] hover:underline font-medium">GitHub repository</a>.
         {/* Sample Texts */}
         <div className="mb-6">
           <h3 className="text-sm font-medium mb-3">Try a sample text:</h3>
@@ -210,7 +210,7 @@ export default function SentimentAnalysisDemo() {
           <p className="text-sm text-muted-foreground mb-4">Want to see the full implementation with production-ready code?</p>
           <div className="flex justify-center gap-4">
             <Button asChild className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white">
-              <a href="https://github.com/aswinraja98/sentiment-analysis-tool-v2" target="_blank">View on GitHub</a>
+              <a href="https://github.com/ashwin-rajakannan/sentiment-analysis-tool-v2" target="_blank">View on GitHub</a>
             </Button>
             <Button variant="outline" asChild>
               <Link href="/#projects">Back to Portfolio</Link>

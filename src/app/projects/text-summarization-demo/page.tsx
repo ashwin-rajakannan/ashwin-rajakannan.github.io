@@ -100,11 +100,11 @@ export default function TextSummarizationDemo() {
               and hybrid summarization approaches. For the complete implementation with backend API, 
               visit the{" "}
               <a 
-                href="https://github.com/aswinraja98/text-summarization-system" 
+                href="https://github.com/ashwin-rajakannan/text-summarization-system" 
                 target="_blank"
                 className="text-[#06B6D4] hover:underline font-medium"
               >
-                GitHub repository
+                  GitHub repository
               </a>.
             </p>
           </CardContent>
@@ -247,7 +247,7 @@ export default function TextSummarizationDemo() {
               asChild
               className="bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white"
             >
-              <a href="https://github.com/aswinraja98/text-summarization-system" target="_blank">
+              <a href="https://github.com/ashwin-rajakannan/text-summarization-system" target="_blank">
                 View on GitHub
               </a>
             </Button>

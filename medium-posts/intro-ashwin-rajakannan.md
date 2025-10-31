@@ -115,7 +115,7 @@ I'd love to connect!
 
 📧 **Email:** aswinraja98@gmail.com  
 💼 **LinkedIn:** [Ashwin Rajakannan](https://www.linkedin.com/in/ashwin-rajakannan-094876189)  
-💻 **GitHub:** [aswinraja98](https://github.com/aswinraja98)  
+💻 **GitHub:** [aswinraja98](https://github.com/ashwin-rajakannan)  
 📊 **Kaggle:** [ashwin0001](https://www.kaggle.com/ashwin0001)
 
 ---

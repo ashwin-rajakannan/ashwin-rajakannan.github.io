@@ -1016,8 +1016,8 @@ Built these projects? Found better approaches? I'd love to see what you created.
 
 **Email:** aswinraja98@gmail.com  
 **LinkedIn:** linkedin.com/in/ashwin-rajakannan-094876189  
-**GitHub:** github.com/aswinraja98  
-**Kaggle:** kaggle.com/ashwin0001
+**GitHub:** github.com/ashwin-rajakannan  
+**Kaggle:** www.kaggle.com/ashwin0001
 
 ---
 

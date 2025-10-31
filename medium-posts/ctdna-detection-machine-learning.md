@@ -343,7 +343,7 @@ I'd love to hear your experiences, questions, or suggestions:
 
 📧 **Email:** aswinraja98@gmail.com  
 💼 **LinkedIn:** [linkedin.com/in/ashwin-rajakannan-094876189](https://www.linkedin.com/in/ashwin-rajakannan-094876189)  
-💻 **GitHub:** [github.com/aswinraja98](https://github.com/aswinraja98)  
+💻 **GitHub:** [github.com/aswinraja98](https://github.com/ashwin-rajakannan)  
 📊 **Kaggle:** [kaggle.com/ashwin0001](https://www.kaggle.com/ashwin0001)  
 
 ---

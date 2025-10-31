@@ -5,7 +5,7 @@ import React from "react";
 const DATA = {
   name: "Ashwin Rajakannan",
   initials: "AR",
-  url: "https://github.com/aswinraja98",
+  url: "https://github.com/ashwin-rajakannan",
   email: "aswinraja98@gmail.com",
   phone: "+91 6374511087",
   location: "Dharmapuri, Tamilnadu, India",
@@ -29,8 +29,14 @@ const DATA = {
   social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/aswinraja98",
+        url: "https://github.com/ashwin-rajakannan",
         icon: Icons.github,
+        navbar: true,
+      },
+      Kaggle: {
+        name: "Kaggle",
+        url: "https://www.kaggle.com/ashwin0001",
+        icon: Icons.kaggle,
         navbar: true,
       },
       LinkedIn: {
@@ -161,7 +167,7 @@ const DATA = {
         },
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/text-summarization-system",
+          href: "https://github.com/ashwin-rajakannan/text-summarization-system",
           icon: "Github"
         }
       ],
@@ -182,7 +188,7 @@ const DATA = {
         },
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/sentiment-analysis-tool-v2",
+          href: "https://github.com/ashwin-rajakannan/sentiment-analysis-tool-v2",
           icon: "Github"
         }
       ],
@@ -207,14 +213,14 @@ const DATA = {
       title: "Traffic Sign Recognition System",
       description: "Deep learning-based system for real-time traffic sign classification using CNNs trained on the GTSRB dataset. Features a modern Next.js/Tailwind CSS frontend and FastAPI backend. Includes image preprocessing, prediction, and technical badges.",
       technologies: ["Python", "TensorFlow", "FastAPI", "Next.js", "Tailwind CSS", "GTSRB", "Computer Vision", "Deep Learning"],
-      href: "https://github.com/aswinraja98/traffic-signs-recognition-system",
+  href: "https://github.com/ashwin-rajakannan/traffic-signs-recognition-system",
       dates: "2025",
       image: "/traffic-sign-recognition-system-logo.png",
       video: "",
       links: [
         {
           title: "Source",
-          href: "https://github.com/aswinraja98/traffic-signs-recognition-system",
+          href: "https://github.com/ashwin-rajakannan/traffic-signs-recognition-system",
           icon: "Github"
         }
       ],
