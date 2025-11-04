@@ -98,6 +98,8 @@ export function CertificationAccordion({ cert, idx }: { cert: any; idx: number }
           id={`cert-panel-${idx}`}
           className="rounded-b-lg bg-transparent border-x border-b border-slate-200 dark:border-[#06B6D4]/20 shadow-md px-6 pt-2 pb-6"
         >
+            {/* Certification Title at the very top */}
+            <div className="font-semibold text-base text-[#06B6D4] dark:text-[#06B6D4] mb-2 break-words">{cert.title}</div>
           <div className="text-xs text-slate-700 dark:text-[#E5E7EB] mb-2">{cert.institution}</div>
           <div className="text-base font-bold text-slate-700 dark:text-[#E5E7EB] mb-2 mt-2">Skills Gained:</div>
           <div className="flex flex-wrap gap-3 mb-6">
