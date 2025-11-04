@@ -1,0 +1,5 @@
+flask
+flask_cors
+nltk
+pandas
+scikit-learn
