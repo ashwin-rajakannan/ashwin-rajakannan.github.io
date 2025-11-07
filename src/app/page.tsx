@@ -34,10 +34,29 @@ export default function Page() {
         }
       }
 
+      // Handle #projects hash clearing when scrolled away
       if (window.location.hash === "#projects") {
         const projectsSection = document.getElementById("projects");
         if (projectsSection) {
           const rect = projectsSection.getBoundingClientRect();
+          const sectionTop = rect.top + window.scrollY;
+          const sectionBottom = sectionTop + rect.height;
+          const currentScroll = window.scrollY;
+
+          if (
+            currentScroll > sectionBottom + 100 ||
+            currentScroll < sectionTop - 100
+          ) {
+            window.history.replaceState(null, "", window.location.pathname);
+          }
+        }
+      }
+
+      // Handle #contact hash clearing when scrolled away
+      if (window.location.hash === "#contact") {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          const rect = contactSection.getBoundingClientRect();
           const sectionTop = rect.top + window.scrollY;
           const sectionBottom = sectionTop + rect.height;
           const currentScroll = window.scrollY;
@@ -332,6 +351,9 @@ export default function Page() {
                       links={project.links ? [...project.links] : undefined}
                       isTextSummarization={project.title === "Text Summarization System"}
                       isSentimentAnalysis={project.title === "Sentiment Analysis Tool"}
+                      isBookRecommender={project.title === "Genre-Based Book Recommender"}
+                      isTrafficSign={project.title === "Traffic Sign Recognition System"}
+                      isCtDNA={project.title === "Identification of Circulating Tumor DNA (ctDNA) Using Machine Learning"}
                       expanded={expandedCardId === id}
                       onExpand={() => setExpandedCardId(id)}
                       onCollapse={() => setExpandedCardId(null)}

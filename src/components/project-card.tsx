@@ -16,6 +16,9 @@ type ProjectCardProps = {
   href?: string;
   isTextSummarization?: boolean;
   isSentimentAnalysis?: boolean;
+  isBookRecommender?: boolean;
+  isTrafficSign?: boolean;
+  isCtDNA?: boolean;
   isPaperOnly?: boolean;
   className?: string;
   expanded?: boolean;
@@ -42,6 +45,9 @@ const ProjectCard = ({
   href,
   isTextSummarization,
   isSentimentAnalysis,
+  isBookRecommender,
+  isTrafficSign,
+  isCtDNA,
   isPaperOnly,
   className,
   expanded = false,
@@ -63,8 +69,8 @@ const ProjectCard = ({
           {/* Row 1: Image/Video Section */}
           <div>
             {(video || image) && (
-              !isPaperOnly ? (
-                (isTextSummarization || isSentimentAnalysis) ? (
+              (!isPaperOnly && !isTrafficSign && !isCtDNA) ? (
+                (isTextSummarization || isSentimentAnalysis || isBookRecommender) ? (
                   <button
                     type="button"
                     className="block w-full cursor-pointer focus:outline-none"
@@ -193,8 +199,6 @@ const ProjectCard = ({
                   target="_blank"
                   className="inline-flex items-center gap-1.5 px-3 py-2 text-[10px] font-medium rounded-md bg-transparent text-[#06B6D4] border border-[#06B6D4] hover:bg-[#06B6D4] hover:text-white transition-all duration-200 min-w-[90px] justify-center"
                 >
-                  {/* You may need to define getIcon elsewhere */}
-                  {link.icon && <span>{link.icon}</span>}
                   <span>{link.title}</span>
                 </Link>
               ))}
@@ -206,10 +210,10 @@ const ProjectCard = ({
           </div>
         </div>
       </Card>
-      {/* Modal for Try Demo - for Text Summarization and Sentiment Analysis */}
-      {(isTextSummarization || isSentimentAnalysis) && showDemoModal && (
+      {/* Modal for Try Demo - for Text Summarization, Sentiment Analysis, and Book Recommender */}
+      {(isTextSummarization || isSentimentAnalysis || isBookRecommender) && showDemoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm">
-          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md min-h-[380px] sm:min-h-[420px] flex flex-col justify-center items-center bg-[#121417] dark:bg-[#18181B] border-2 border-[#06B6D4] rounded-xl shadow-2xl p-8 animate-fadeIn">
+          <div className="relative w-full max-w-sm h-[500px] flex flex-col justify-between bg-[#121417] dark:bg-[#18181B] border-2 border-[#06B6D4] rounded-xl shadow-2xl p-8 animate-fadeIn">
             {/* Close button */}
             <button
               className="absolute top-3 right-3 text-[#06B6D4] hover:text-white text-xl font-bold"
@@ -218,26 +222,33 @@ const ProjectCard = ({
             >
               ×
             </button>
-            {/* Icon */}
-            <div className="mb-6 flex items-center justify-center">
-              <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#06B6D4]/10 border border-[#06B6D4]/30">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="#06B6D4" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
-                </svg>
-              </span>
+            {/* Content Container */}
+            <div className="flex flex-col items-center justify-center flex-1">
+              {/* Icon */}
+              <div className="mb-6 flex items-center justify-center">
+                <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#06B6D4]/10 border border-[#06B6D4]/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="#06B6D4" className="w-8 h-8">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                  </svg>
+                </span>
+              </div>
+              {/* Title */}
+              <h2 className="text-2xl font-bold text-white text-center mb-4">Try the Demo! <span className="ml-1">✨</span></h2>
+              {/* Description - Fixed height container */}
+              <div className="h-20 flex items-center justify-center mb-6">
+                <p className="text-sm text-slate-300 text-center leading-relaxed">
+                  {isTextSummarization
+                    ? "Experience the AI-powered Text Summarization System in action. Paste your text and get instant summaries!"
+                    : isBookRecommender
+                    ? "Experience the AI-powered Book Recommendation System in action. Discover books based on genres and ratings!"
+                    : "Experience the AI-powered Sentiment Analysis Tool in action. Paste your text and instantly see its sentiment!"}
+                </p>
+              </div>
             </div>
-            {/* Title */}
-            <h2 className="text-2xl font-bold text-white text-center mb-3">Try the Demo! <span className="ml-1">✨</span></h2>
-            {/* Description */}
-            <p className="text-base text-slate-300 text-center mb-8">
-              {isTextSummarization
-                ? "Experience the AI-powered Text Summarization System in action. Paste your text and get instant summaries!"
-                : "Experience the AI-powered Sentiment Analysis Tool in action. Paste your text and instantly see its sentiment!"}
-            </p>
-            {/* Buttons */}
+            {/* Buttons - Fixed at bottom */}
             <div className="flex gap-4 w-full justify-center">
               <a
-                href={isTextSummarization ? "/projects/text-summarization-demo" : "/projects/sentiment-analysis-demo"}
+                href={isTextSummarization ? "/projects/text-summarization-demo" : isBookRecommender ? "/projects/genre-based-book-recommender" : "/projects/sentiment-analysis-demo"}
                 className="px-6 py-3 rounded-lg bg-[#06B6D4] text-white font-semibold shadow hover:bg-[#06B6D4]/90 transition-all"
                 onClick={() => setShowDemoModal(false)}
               >

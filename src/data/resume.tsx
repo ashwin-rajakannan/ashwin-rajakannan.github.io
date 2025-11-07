@@ -161,7 +161,7 @@ const DATA = {
       video: "",
       links: [
         {
-          title: "Try Demo",
+          title: "Demo",
           href: "/projects/text-summarization-demo",
           icon: "Globe"
         },
@@ -183,7 +183,7 @@ const DATA = {
       isBookRecommender: true,
       links: [
         {
-          title: "Try Demo",
+          title: "Demo",
           href: "/projects/genre-based-book-recommender",
           icon: "Globe"
         },
@@ -204,7 +204,7 @@ const DATA = {
       video: "",
       links: [
         {
-          title: "Try Demo",
+          title: "Demo",
           href: "/projects/sentiment-analysis-demo",
           icon: "Globe"
         },
