@@ -161,7 +161,7 @@ const DATA = {
       video: "",
       links: [
         {
-          title: "Demo",
+          title: "Try Demo",
           href: "/projects/text-summarization-demo",
           icon: "Globe"
         },
@@ -183,8 +183,8 @@ const DATA = {
       isBookRecommender: true,
       links: [
         {
-          title: "Demo",
-          href: "https://your-demo-url.com", // TODO: Replace with actual deployed Flask app URL
+          title: "Try Demo",
+          href: "/projects/genre-based-book-recommender",
           icon: "Globe"
         },
         {
@@ -204,7 +204,7 @@ const DATA = {
       video: "",
       links: [
         {
-          title: "Demo",
+          title: "Try Demo",
           href: "/projects/sentiment-analysis-demo",
           icon: "Globe"
         },
