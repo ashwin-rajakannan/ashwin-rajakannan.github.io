@@ -1,0 +1,27 @@
+<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book cover background -->
+  <rect width="200" height="300" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Book spine shadow -->
+  <rect x="0" y="0" width="8" height="300" fill="#d1d5db"/>
+  
+  <!-- Book icon -->
+  <g transform="translate(100, 100)">
+    <!-- Book shape -->
+    <rect x="-40" y="-30" width="80" height="60" fill="#6b7280" rx="4"/>
+    <rect x="-35" y="-25" width="70" height="50" fill="#9ca3af" rx="2"/>
+    
+    <!-- Book lines -->
+    <line x1="-25" y1="-15" x2="25" y2="-15" stroke="#6b7280" stroke-width="1"/>
+    <line x1="-25" y1="-5" x2="25" y2="-5" stroke="#6b7280" stroke-width="1"/>
+    <line x1="-25" y1="5" x2="15" y2="5" stroke="#6b7280" stroke-width="1"/>
+  </g>
+  
+  <!-- Placeholder text -->
+  <text x="100" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    No Cover
+  </text>
+  <text x="100" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    Available
+  </text>
+</svg>

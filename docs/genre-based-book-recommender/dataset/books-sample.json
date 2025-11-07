@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "year": 1925,
+    "rating": 4.2,
+    "description": "A classic American novel about the Jazz Age and the pursuit of the American Dream.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "year": 1960,
+    "rating": 4.3,
+    "description": "A gripping tale of racial injustice and childhood in the American South.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Science Fiction",
+    "year": 1949,
+    "rating": 4.4,
+    "description": "A dystopian social science fiction novel about totalitarian control.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "year": 1813,
+    "rating": 4.1,
+    "description": "A romantic novel about manners, upbringing, morality, and marriage.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "year": 1951,
+    "rating": 3.8,
+    "description": "A controversial novel about teenage rebellion and alienation.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "Science Fiction",
+    "year": 1965,
+    "rating": 4.5,
+    "description": "An epic science fiction novel set on the desert planet Arrakis.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "year": 1937,
+    "rating": 4.6,
+    "description": "A fantasy adventure novel about Bilbo Baggins and his unexpected journey.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "genre": "Romance",
+    "year": 1847,
+    "rating": 4.0,
+    "description": "A novel about the experiences of an orphaned girl who becomes a governess.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "year": 1954,
+    "rating": 4.7,
+    "description": "An epic high fantasy novel about the quest to destroy the One Ring.",
+    "cover": "/covers/placeholder.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Science Fiction",
+    "year": 1932,
+    "rating": 4.0,
+    "description": "A dystopian novel about a technologically advanced future society.",
+    "cover": "/covers/placeholder.jpg"
+  }
+]
