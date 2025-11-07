@@ -51,6 +51,7 @@ const BlurFadeText = ({
               }}
               className={cn("inline-block", className)}
               style={{ width: char.trim() === "" ? "0.2em" : "auto" }}
+              suppressHydrationWarning
             >
               {char}
             </motion.span>
@@ -74,6 +75,7 @@ const BlurFadeText = ({
             ease: "easeOut",
           }}
           className={cn("inline-block", className)}
+          suppressHydrationWarning
         >
           {text}
         </motion.span>
