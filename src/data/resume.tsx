@@ -173,6 +173,28 @@ const DATA = {
       ],
     },
     {
+      title: "Genre-Based Book Recommender",
+      description: "A book recommendation system that suggests books based on user ratings and genres using collaborative filtering. Built with Python and Surprise library, featuring a demo and professional documentation.",
+      technologies: ["Python", "Surprise", "scikit-learn", "Collaborative Filtering", "Book Recommendation"],
+      href: "/projects/genre-based-book-recommender",
+      dates: "2025",
+      image: "/genre-based-book-recommender.png",
+      video: "",
+      isBookRecommender: true,
+      links: [
+        {
+          title: "Demo",
+          href: "https://your-demo-url.com", // TODO: Replace with actual deployed Flask app URL
+          icon: "Globe"
+        },
+        {
+          title: "Source",
+          href: "https://github.com/ashwin-rajakannan/genre-based-book-recommender",
+          icon: "Github"
+        }
+      ]
+    },
+    {
       title: "Sentiment Analysis Tool",
   description: "Production-ready sentiment analysis system using Python and VADER (Valence Aware Dictionary and sEntiment Reasoner) for robust sentiment scoring. Features a Next.js/React frontend demo, and supports advanced NLP with scikit-learn and other Python libraries.",
   technologies: ["Python", "VADER", "scikit-learn", "NLP", "Next.js", "React"],
