@@ -356,7 +356,7 @@ export default function Page() {
                       image={project.image}
                       video={project.video}
                       links={project.links ? [...project.links] : undefined}
-                      isAIVoiceAssistant={project.title === "AI Voice Assistant"}
+                      isAIVoiceAssistant={project.title === "AI Powered Voice Notes Workspace"}
                       isTextSummarization={project.title === "Text Summarization System"}
                       isSentimentAnalysis={project.title === "Sentiment Analysis Tool"}
                       isBookRecommender={project.title === "Genre-Based Book Recommender"}

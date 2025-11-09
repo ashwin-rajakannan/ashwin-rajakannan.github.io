@@ -152,7 +152,7 @@ const DATA = {
   ],
   projects: [
     {
-      title: "AI Voice Assistant",
+      title: "AI Powered Voice Notes Workspace",
       description: "AI-powered voice notes application with speech-to-text conversion, text-to-speech synthesis, and note-taking features. Integrates with calendars and supports voice commands for hands-free operation.",
       technologies: ["Python", "SpeechRecognition", "pyttsx3", "OpenAI", "Flask", "Voice Processing", "NLP", "AI Assistant"],
       href: "/projects/ai-voice-assistant-demo",
