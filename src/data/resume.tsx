@@ -152,6 +152,27 @@ const DATA = {
   ],
   projects: [
     {
+      title: "AI Voice Assistant",
+      description: "AI-powered voice notes application with speech-to-text conversion, text-to-speech synthesis, and note-taking features. Integrates with calendars and supports voice commands for hands-free operation.",
+      technologies: ["Python", "SpeechRecognition", "pyttsx3", "OpenAI", "Flask", "Voice Processing", "NLP", "AI Assistant"],
+      href: "/projects/ai-voice-assistant-demo",
+      dates: "2025",
+      image: "/AI-powered-voice-notes-workspace.jpg",
+      video: "",
+      links: [
+        {
+          title: "Demo",
+          href: "/projects/ai-voice-assistant-demo",
+          icon: "Globe"
+        },
+        {
+          title: "Source",
+          href: "https://github.com/ashwin-rajakannan/AI-powered-voice-notes-workspace-v2.git",
+          icon: "Github"
+        }
+      ],
+    },
+    {
       title: "Text Summarization System",
       description: "Production-ready text summarization system implementing extractive (BERT), abstractive (T5/BART), and hybrid approaches. Features CLI tool, ROUGE evaluation, and supports multiple NLP models for various use cases.",
         technologies: ["Python", "BERT", "T5", "BART", "Transformers", "PyTorch", "NLTK", "scikit-learn", "Text Summarization System"],
@@ -171,6 +192,28 @@ const DATA = {
           icon: "Github"
         }
       ],
+    },
+    {
+      title: "Genre-Based Book Recommender",
+      description: "A book recommendation system that suggests books based on user ratings and genres using collaborative filtering. Built with Python and Surprise library, featuring a demo and professional documentation.",
+      technologies: ["Python", "Surprise", "scikit-learn", "Collaborative Filtering", "Book Recommendation"],
+      href: "/projects/genre-based-book-recommender",
+      dates: "2025",
+      image: "/genre-based-book-recommender.png",
+      video: "",
+      isBookRecommender: true,
+      links: [
+        {
+          title: "Demo",
+          href: "/projects/genre-based-book-recommender",
+          icon: "Globe"
+        },
+        {
+          title: "Source",
+          href: "https://github.com/ashwin-rajakannan/genre-based-book-recommender",
+          icon: "Github"
+        }
+      ]
     },
     {
       title: "Sentiment Analysis Tool",
