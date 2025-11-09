@@ -152,6 +152,27 @@ const DATA = {
   ],
   projects: [
     {
+      title: "AI Voice Assistant",
+      description: "AI-powered voice notes application with speech-to-text conversion, text-to-speech synthesis, and note-taking features. Integrates with calendars and supports voice commands for hands-free operation.",
+      technologies: ["Python", "SpeechRecognition", "pyttsx3", "OpenAI", "Flask", "Voice Processing", "NLP", "AI Assistant"],
+      href: "/projects/ai-voice-assistant-demo",
+      dates: "2025",
+      image: "/AI-powered-voice-notes-workspace.jpg",
+      video: "",
+      links: [
+        {
+          title: "Demo",
+          href: "/projects/ai-voice-assistant-demo",
+          icon: "Globe"
+        },
+        {
+          title: "Source",
+          href: "https://github.com/ashwin-rajakannan/AI-powered-voice-notes-workspace-v2.git",
+          icon: "Github"
+        }
+      ],
+    },
+    {
       title: "Text Summarization System",
       description: "Production-ready text summarization system implementing extractive (BERT), abstractive (T5/BART), and hybrid approaches. Features CLI tool, ROUGE evaluation, and supports multiple NLP models for various use cases.",
         technologies: ["Python", "BERT", "T5", "BART", "Transformers", "PyTorch", "NLTK", "scikit-learn", "Text Summarization System"],

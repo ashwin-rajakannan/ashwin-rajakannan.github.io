@@ -349,6 +349,7 @@ export default function Page() {
                       image={project.image}
                       video={project.video}
                       links={project.links ? [...project.links] : undefined}
+                      isAIVoiceAssistant={project.title === "AI Voice Assistant"}
                       isTextSummarization={project.title === "Text Summarization System"}
                       isSentimentAnalysis={project.title === "Sentiment Analysis Tool"}
                       isBookRecommender={project.title === "Genre-Based Book Recommender"}
@@ -362,6 +363,61 @@ export default function Page() {
                 </BlurFade>
               ))}
             </div>
+            
+            {/* GitHub CTA - Continues projects section */}
+            <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
+              <div className="mt-8 flex justify-center">
+                <div className="w-full max-w-4xl p-6 rounded-lg bg-card border border-border">
+                  <div className="text-center space-y-4">
+                    <div className="flex items-center justify-center mb-3">
+                      <div className="p-2.5 bg-[#06B6D4]/10 dark:bg-[#06B6D4]/20 rounded-full">
+                        <Icons.github className="h-6 w-6 text-[#06B6D4]" />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-semibold text-foreground">
+                      Want to see more?
+                    </h3>
+                    
+                    <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
+                      Check out my GitHub for the complete collection of projects, including production-ready code, 
+                      detailed documentation, and implementation guides. From NLP pipelines to full-stack applications, 
+                      there&apos;s much more to explore beyond these highlights.
+                    </p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+                      <a
+                        href="https://github.com/ashwin-rajakannan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#06B6D4] hover:bg-[#06B6D4]/90 text-white font-medium rounded-lg transition-colors text-sm"
+                      >
+                        <Icons.github className="h-4 w-4" />
+                        View GitHub Profile
+                      </a>
+                      
+                      <a
+                        href="https://github.com/ashwin-rajakannan?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 border border-border hover:border-[#06B6D4] text-muted-foreground hover:text-[#06B6D4] font-medium rounded-lg transition-colors hover:bg-muted/50 text-sm"
+                      >
+                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                        Browse Repositories
+                      </a>
+                    </div>
+                    
+                    <div className="pt-3 border-t border-border">
+                      <p className="text-xs text-muted-foreground">
+                        💡 <span className="font-medium">Pro tip:</span> Star the repositories you find interesting!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </BlurFade>
           </div>
         </div>
       </section>
