@@ -199,7 +199,7 @@ const DATA = {
       technologies: ["Python", "Surprise", "scikit-learn", "Collaborative Filtering", "Book Recommendation"],
       href: "/projects/genre-based-book-recommender",
       dates: "2025",
-      image: "/genre-based-book-recommender.png",
+      image: "/genre-based-book-recommender.jpg",
       video: "",
       isBookRecommender: true,
       links: [

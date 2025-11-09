@@ -18,18 +18,25 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   const [showScrollTop, setShowScrollTop] = React.useState(false);
   const [expandedCardId, setExpandedCardId] = React.useState<number | null>(null);
+  const [openDemoModal, setOpenDemoModal] = React.useState<string | null>(null);
 
   React.useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
 
-      // Collapse expanded card if scrolled below projects section
-      if (expandedCardId !== null) {
+      // Collapse expanded card and close demo popups if scrolled away from projects section
+      if (expandedCardId !== null || openDemoModal !== null) {
         const projectsSection = document.getElementById("projects");
         if (projectsSection) {
           const rect = projectsSection.getBoundingClientRect();
-          if (rect.bottom < 0) {
+          const currentScroll = window.scrollY;
+          const sectionTop = rect.top + currentScroll;
+          const sectionBottom = sectionTop + rect.height;
+          
+          // Close when scrolled past the projects section (with some buffer)
+          if (currentScroll > sectionBottom + 200 || currentScroll < sectionTop - 200) {
             setExpandedCardId(null);
+            setOpenDemoModal(null);
           }
         }
       }
@@ -358,6 +365,9 @@ export default function Page() {
                       expanded={expandedCardId === id}
                       onExpand={() => setExpandedCardId(id)}
                       onCollapse={() => setExpandedCardId(null)}
+                      showDemoModal={openDemoModal === project.title}
+                      onDemoModalOpen={() => setOpenDemoModal(project.title)}
+                      onDemoModalClose={() => setOpenDemoModal(null)}
                     />
                   </div>
                 </BlurFade>

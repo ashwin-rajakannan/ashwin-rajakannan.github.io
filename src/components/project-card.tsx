@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -25,6 +25,9 @@ type ProjectCardProps = {
   expanded?: boolean;
   onExpand?: () => void;
   onCollapse?: () => void;
+  showDemoModal?: boolean;
+  onDemoModalOpen?: () => void;
+  onDemoModalClose?: () => void;
 };
 
 const getShortDesc = (desc: string, wordLimit: number) => {
@@ -55,8 +58,10 @@ const ProjectCard = ({
   expanded = false,
   onExpand,
   onCollapse,
+  showDemoModal = false,
+  onDemoModalOpen,
+  onDemoModalClose,
 }: ProjectCardProps) => {
-  const [showDemoModal, setShowDemoModal] = useState(false);
   const shortDesc = getShortDesc(description, 20);
 
   return (
@@ -76,7 +81,7 @@ const ProjectCard = ({
                   <button
                     type="button"
                     className="block w-full cursor-pointer focus:outline-none"
-                    onClick={() => setShowDemoModal(true)}
+                    onClick={() => onDemoModalOpen?.()}
                     aria-label="Try the Demo"
                   >
                     {video && (
@@ -219,7 +224,7 @@ const ProjectCard = ({
             {/* Close button */}
             <button
               className="absolute top-2 right-2 text-[#06B6D4] hover:text-gray-600 dark:hover:text-white text-lg font-bold w-6 h-6 flex items-center justify-center"
-              onClick={() => setShowDemoModal(false)}
+              onClick={() => onDemoModalClose?.()}
               aria-label="Close"
             >
               ×
@@ -254,13 +259,13 @@ const ProjectCard = ({
               <a
                 href={isAIVoiceAssistant ? "/projects/ai-voice-assistant-demo" : isTextSummarization ? "/projects/text-summarization-demo" : isBookRecommender ? "/projects/genre-based-book-recommender" : "/projects/sentiment-analysis-demo"}
                 className="px-4 py-2 text-sm rounded-lg bg-[#06B6D4] text-white font-semibold shadow hover:bg-[#06B6D4]/90 transition-all"
-                onClick={() => setShowDemoModal(false)}
+                onClick={() => onDemoModalClose?.()}
               >
                 Open Demo
               </a>
               <button
                 className="px-4 py-2 text-sm rounded-lg border border-[#06B6D4] text-[#06B6D4] font-semibold bg-transparent hover:bg-[#06B6D4]/10 transition-all"
-                onClick={() => setShowDemoModal(false)}
+                onClick={() => onDemoModalClose?.()}
               >
                 Maybe Later
               </button>
