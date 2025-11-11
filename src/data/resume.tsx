@@ -41,7 +41,7 @@ const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ashwin-rajakannan-094876189",
+        url: "https://www.linkedin.com/in/ashwin-rajakannan/",
         icon: Icons.linkedin,
         navbar: true,
       },
